@@ -1,0 +1,49 @@
+.header
+  padding: 18px 0
+  &__row
+    align-items: center
+  &__logo
+    width: 100%
+    &-wrapper
+      &:hover
+        cursor: url(../img/cursor.svg), auto 
+  &__link
+    position: relative
+    padding: 10px 15px 5px
+    font-family: 'MachineC'
+    font-size: 2rem
+    line-height: 140%
+    text-transform: uppercase
+    text-decoration: none
+    color: $primary
+    transition: all .35s ease
+    &:hover
+      color: $secondary;
+      // cursor: url(../img/cursor1.svg), auto
+      &::before, &::after
+        transform: translate(0,0)
+        opacity: 1
+    &::before, &::after
+      content: ''
+      height: 14px
+      width: 14px
+      position: absolute
+      transition: all .35s ease
+      opacity: 0
+    &::before
+      content: '';
+      right: 0;
+      top: 0;
+      border-top: 3px solid $secondary
+      border-right: 3px solid $secondary
+      transform: translate(-100%, 50%) 
+    &::after
+      content: ''
+      left: 0
+      bottom: 0
+      border-bottom: 3px solid $secondary
+      border-left: 3px solid $secondary
+      transform: translate(100%, -50%)
+.nav
+  &__container
+    display: none

@@ -1,0 +1,13 @@
+/* Safari 11+ */
+@media not all and (min-resolution:.001dpcm)
+  @supports (-webkit-appearance:none) and (stroke-color:transparent)
+    .hero
+      &__image
+        &-wrapper
+          display: block
+    .portfolio
+      &__image
+        margin: 0 auto
+        &-wrapper
+          display: block
+          text-align: center

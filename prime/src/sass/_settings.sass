@@ -1,0 +1,49 @@
+*, *:before, *:after
+  box-sizing: border-box
+html
+  font-size: 16px
+body 
+  font-family: 'Futura Book', sans-serif
+  font-size: 1rem
+  background-color: $secondary
+  // background-image: url(../img/body-bg.svg)
+  // background-position: center
+  // background-repeat: repeat
+
+
+
+img
+  max-width: 100%
+
+button:active, button:focus, input 
+  outline: none
+
+a, a:active, a:focus
+  outline: none
+a:hover
+  cursor: url(../img/cursor.svg), pointer
+
+
+.text-align--center
+  text-align: center
+.disabled
+  display: none !important
+.section
+  &--beige
+    background-color: $beige
+  &__title
+    position: relative
+    display: flex
+    justify-content: center
+    margin: 2rem auto 0
+    font-family: "Montserrat-Medium"
+    font-size: 2rem
+    color: $primary
+    &::after
+      position: absolute
+      z-index: -1
+      height: 10px
+      width: 110%
+      bottom: -6px
+      left: -5%
+      background-color: $beige
