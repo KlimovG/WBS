@@ -20,9 +20,17 @@ button:active, button:focus, input
 
 a, a:active, a:focus
   outline: none
-a:hover
-  cursor: url(../img/cursor.svg), pointer
 
+
+.container
+  width: 85%
+  max-width: 1120px
+  margin: auto
+  // overflow: hidden
+.row 
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
 
 .text-align--center
   text-align: center
@@ -36,8 +44,9 @@ a:hover
     display: flex
     justify-content: center
     margin: 2rem auto 0
-    font-family: "Montserrat-Medium"
-    font-size: 2rem
+    font-family: "Teko"
+    font-weight: 500
+    font-size: 4rem
     color: $primary
     &::after
       position: absolute
@@ -47,3 +56,6 @@ a:hover
       bottom: -6px
       left: -5%
       background-color: $beige
+@media screen and ( min-width: 992px )
+  a:hover
+    cursor: url(../img/cursor.svg), pointer
