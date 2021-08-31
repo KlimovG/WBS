@@ -1,0 +1,66 @@
+.hero
+  padding: 3.75rem 0 5remb
+  &__title
+    margin-bottom: 2.375rem
+    text-align: center
+    font-family: "Teko" , sans-serif
+    font-weight: 600
+    text-transform: uppercase
+    font-size: 6.875rem
+    color: $primary
+  &__text
+    margin-left: 1rem
+    padding: 3rem 3rem
+    background-color: $primary
+    font-family: "Montserrat"
+    font-weight: 500
+    font-size: 1.5rem
+    line-height: 2.312rem
+    text-align: center
+    color: $beige
+    box-shadow: -10px 10px 0px rgba($beige, 1)
+  & .row
+    align-items: center
+  &__col
+    width: 45%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    // align-items: center
+  &__image
+    &-wrapper
+      justify-content: center
+      // display: flex
+      width: 90%
+      box-shadow: 15px 15px 0px $beige
+  &__social
+    display: none
+    &:hover
+      cursor: url(../img/cursor.svg), auto 
+    &-wrapper
+      margin-top: 1.875rem
+      width: 60%
+      display: flex
+      justify-content: space-around
+  &__mail
+    display: flex
+    justify-content: center
+    align-items: center
+    max-width: 25rem
+    padding: 1.5rem 3rem
+    margin: 5rem auto 0
+    font-family: "Montserrat-Medium"
+    font-size: 1.5rem
+    text-decoration: none
+    color: $beige
+    background: $primary
+    // box-shadow: 7px 7px 0px $beige
+    // border: 7px solid $beige
+    outline: 7px solid $beige
+    outline-offset: 5px
+    transition: all 0.5s
+    &:hover
+      background: $beige
+      color: $primary
+      outline: 7px solid $beige
+      outline-offset: -7px

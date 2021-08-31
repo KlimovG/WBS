@@ -1,0 +1,95 @@
+@media screen and ( max-width: 991px )
+  html
+    font-size: 14px
+  .row
+    flex-direction: column
+  .col
+    &-25, &-30, &-32, &-35, &-39, &-40, &-45, &-47, &-49, &-50, &-55, &-60, &-63, &-66, &-70
+      width: 100%
+      flex-direction: column
+      display: flex
+  .header
+    padding: 0
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 99
+    width: 100%
+    &__logo
+      width: auto
+      max-height: 5rem
+      &-wrapper
+        display: flex
+        justify-content: center
+    &__container
+      width: 100%
+    &__row
+      display: none
+    & .nav__container
+      display: flex
+      justify-content: center
+  .hero
+    margin-top: 5rem
+    & .row
+      flex-direction: column-reverse
+    &__text
+      margin-top: 3rem
+      padding: 2rem 2rem
+    &__image
+      &-wrapper
+        margin: auto
+  .portfolio
+    &__row
+      flex-direction: row
+      align-items: stretch
+    &__about
+      position: static
+      width: 60%
+      opacity: 1
+      background: $primary
+    &__card
+      min-height: 0
+      width: 80%
+      margin: 0 auto 2rem
+      &::after
+        z-index: -1
+      &:nth-child(3n)
+        margin: 0 auto 2rem
+    &__image
+      &-wrapper
+        width: 40%
+  .instagram
+    &_gallery
+      & a
+        width: 100%
+        margin-right: 0
+        margin-bottom: 4%
+        justify-content: center
+@media screen and ( max-width: 767px )
+  .hero
+    &__title
+      font-size: 4rem
+    &__col
+      width: 80%
+  .portfolio
+    &__card
+      width: 100%
+@media screen and ( max-width: 575px )
+  html
+    font-size: 12px
+  .hero
+    &__col
+      width: 100%
+    &__mail
+      width: 80%
+@media screen and ( max-width: 375px )
+  .portfolio
+    &__card
+      flex-direction: column
+    &__image
+      &-wrapper
+        width: 80%
+        padding: 1.5rem
+    &__about
+      width: 100%
+
