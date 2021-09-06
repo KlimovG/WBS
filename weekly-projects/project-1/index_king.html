@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>tajam</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootsrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="./png/logo.png" alt="tajam logo"</a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="" id="home">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">EXPERTISE</a></li>
+            <li><a href="">TEAMS</a></li>
+            <li><a href="">WORKS</a></li>
+            <li><a href="">PEOPLE SAY</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>We Are Awesome Creative Agency</h1>
+        <p>
+          This Photoshop's version of Lorem ipsum dolor sit amet, clita congue
+          eu duo, vivendo sensibus assueverit id vim. Dolores deseruisse
+          philosophia qui ex,<br />
+          te nihil essent definiebas cum, vis albucius singulis ex. Cu accusata
+          sensibus euripidis quo, vim ex enim partem. <br />Falli commune
+          assentior ad ius, cu his maiorum vivendo mandamus.
+        </p>
+        <a href="" class="learn-more">LEARN MORE</a>
+      </div>
+    </section>
+
+    <main>
+      <section class="video">
+        <div class="play">
+          <div class="image-container">
+            <a href="https://youtu.be/0dmEPxyrXcQ" target="_blank"
+              ><img src="./png/play.png" alt="play button" width="50px"
+            /></a>
+          </div>
+          <h4>WATCH OUR STORY</h4>
+        </div>
+      </section>
+
+      <section class="expertise">
+        <div class="container">
+          <h2 class="expertise_title">EXPERTISE</h2>
+          <p class="expertise_subtitle">
+            Lorem ipsum dolor sit amet proin gravida nibh vel velit
+          </p>
+
+          <div class="row">
+            <div class="expertise_card">
+              <a
+                class="expertise_icon"
+                href="https://youtu.be/a1__rqrIb9g"
+                target="_blank"
+                ><img src="./png/screen.png" alt="Watch YouTube video"
+              /></a>
+
+              <h4 class="expertise_heading">WEB DESIGN & DEVELOPMENT</h4>
+              <p class="text">
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                vel velit auctor aliquet Aenean.
+              </p>
+            </div>
+
+            <div class="expertise_card">
+              <a
+                class="expertise_icon"
+                href="https://www.designcrowd.com/design/11346297"
+                target="_blank"
+                ><img src="./png/pen.png" alt="Design crowd Page"
+              /></a>
+
+              <h4 class="expertise_heading">BRANDING IDENTITY</h4>
+              <p class="text">
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                vel velit auctor aliquet Aenean.
+              </p>
+            </div>
+
+            <div class="expertise_card">
+              <a
+                class="expertise_icon"
+                href="https://dribbble.com/shots/11303484-Short-video-app/attachments/2913703?mode=media"
+                target="_blank"
+                ><img src="./png/mobile.png" alt="Dribble page"
+              /></a>
+
+              <h4 class="expertise_heading">MOBILE APP</h4>
+              <p class="text">
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                vel velit auctor aliquet Aenean.
+              </p>
+            </div>
+
+            <div class="expertise_card">
+              <a
+                class="expertise_icon"
+                href="https://www.shortclip.ch/"
+                target="_blank"
+                ><img src="./png/graph.png" alt="Shortclip page"
+              /></a>
+
+              <h4 class="expertise_heading">SEARCH ENGINE OPTIMIZATION</h4>
+              <p class="text">
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                vel velit auctor aliquet Aenean.
+              </p>
+            </div>
+
+            <div class="expertise_card">
+              <a
+                class="expertise_icon"
+                href="https://www.polygon.com/22634598/3d-game-on-phone-indie-dev-unity-cyberpunk-platformer-crt-tv-itchio"
+                target="_blank"
+                ><img src="./png/gameboy.png" alt="Polygon Home page"
+              /></a>
+
+              <h4 class="expertise_heading">GAME DEVELOPMENT</h4>
+              <p class="text">
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                vel velit auctor aliquet Aenean.
+              </p>
+            </div>
+
+            <div class="expertise_card">
+              <a
+                class="expertise_icon"
+                href="https://www.gograph.com/vector-clip-art/made-with-love.html"
+                target="_blank"
+                ><img src="./png/heart.png" alt="Go graph"
+              /></a>
+
+              <h4 class="expertise_heading">MADE WITH LOVE</h4>
+              <p class="text">
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                vel velit auctor aliquet Aenean.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="about"></footer>
+
+    <!--JavaScript for Toggle Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
